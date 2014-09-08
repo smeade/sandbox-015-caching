@@ -1,28 +1,58 @@
-== README
+## Readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application to experiment with the [Bourbon.id](http://bourbon.io/) and family.
 
-Things you may want to cover:
+Demo Heroku app is [here](http://sandbox-014-bourbon.herokuapp.com/).
 
-* Ruby version
+## Notes
 
-* System dependencies
+1. Don't forget to add normalize.scss.
 
-* Configuration
+2. Remove the unused scaffold.css.
 
-* Database creation
+3. Before running `bitters install`, be sure to `cd app/assets/stylesheets`.
 
-* Database initialization
+## Getting Started with this codebase
 
-* How to run the test suite
+1. Install gems:
 
-* Services (job queues, cache servers, search engines, etc.)
+        bundle install
 
-* Deployment instructions
+2. Create the database:
 
-* ...
+        rake db:create
 
+4. Migrate the database:
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+        rake db:migrate
+
+5. Start the web server:
+
+        rails server
+
+6. Using a browser, go to [http://localhost:3000](http://localhost:3000)
+
+## Running the test suite
+
+        rake
+
+## Deploying to Heroku
+
+1. Install the [Heroku toolbelt](https://devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup) on local workstation (if not already installed).
+
+2. Create the [Heroku app](https://devcenter.heroku.com/articles/getting-started-with-rails4#deploy-your-application-to-heroku) (if not already created).
+
+        heroku apps:create
+
+3. [Deploy](https://devcenter.heroku.com/articles/git#deploying-code)
+
+        git push heroku master
+
+4. Run migrations
+
+        heroku run rake db:migrate
+
+5. Visit the deployed app
+
+        heroku open
+
