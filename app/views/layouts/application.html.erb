@@ -8,7 +8,30 @@
 </head>
 <body>
 
-<%= yield %>
+<div id='main'>
+  <section>
+    <aside>Bourbon mixins</aside>
+    <article>
+      <%= link_to 'Bourbon', 'http://bourbon.io/' %> is a simple and lightweight mixin library for Sass.
+    </article>
+  </section>
+  <section>
+    <aside>Neat grid</aside>
+    <article>
+      <%= link_to 'Neat', 'http://neat.bourbon.io/' %> is an open source semantic grid framework built on top of Sass and Bourbon.
+    </article>
+  </section>
+  <section>
+    <aside>Bitters styles</aside>
+    <article>
+      <%= link_to 'Bitters', 'http://bitters.bourbon.io/' %> is scaffold styles, variables and structure for Bourbon projects.
+    </article>
+  </section>
+
+  <section id='content'>
+    <%= yield %>
+  </section>
+</div>
 
 </body>
 </html>
