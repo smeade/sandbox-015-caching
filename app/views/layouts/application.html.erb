@@ -9,6 +9,9 @@
 <body>
 
 <div id='main'>
+
+  <%= render 'shared/nav' %>
+
   <section>
     <aside>Bourbon mixins</aside>
     <article>
@@ -26,6 +29,14 @@
     <article>
       <%= link_to 'Bitters', 'http://bitters.bourbon.io/' %> is scaffold styles, variables and structure for Bourbon projects.
     </article>
+  </section>
+
+  <section id='switch'>
+    <label class="label-switch">
+      <input type="checkbox" checked='checked'/>
+      <div class="checkbox"></div>
+    </label>
+    A switch that does nothing
   </section>
 
   <section id='content'>
