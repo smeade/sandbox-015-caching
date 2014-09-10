@@ -1,9 +1,10 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
 <%= cache @product do %>
 
-  <p id="notice">
-    Rendered at: <%= Time.now %><br/>
-    <%= notice %>
-  </p>
+  <p>Rendered at: <%= Time.now %></p>
 
   <p>
     <strong>Sku:</strong>

@@ -6,6 +6,10 @@ Demo Heroku app is [here](http://sandbox-015-caching.herokuapp.com/).
 
 ## Notes
 
+1. To use caching in local dev:
+
+        config.action_controller.perform_caching = true
+
 ## Getting Started with this codebase
 
 1. Install gems:
