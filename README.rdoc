@@ -1,18 +1,10 @@
 ## Readme
 
-An application to experiment with the [Bourbon.id](http://bourbon.io/) and family.
+An application to experiment with the [Rails caching](http://guides.rubyonrails.org/caching_with_rails.html).
 
-Demo Heroku app is [here](http://sandbox-015-bourbon.herokuapp.com/).
+Demo Heroku app is [here](http://sandbox-015-caching.herokuapp.com/).
 
 ## Notes
-
-1. I like bourbon, neat and bitters for their light weight and semantic approach. Both Bootstrap and Zurb Foundation can be implemented semantically, of course. Yet the Bourbon family follows a semantic-first convention.
-
-2. Don't forget to add normalize.scss.
-
-3. Remove the unused scaffold.css.
-
-4. Before running `bitters install`, be sure to `cd app/assets/stylesheets`.
 
 ## Getting Started with this codebase
 

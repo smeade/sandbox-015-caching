@@ -31,6 +31,12 @@ gem 'bitters'
 
 gem 'faker', github: 'stympy/faker'
 
+# MemCachier
+# https://devcenter.heroku.com/articles/memcachier#rails-3-and-4
+gem 'kgio'
+gem 'memcachier'
+gem 'dalli'
+
 group :development do
   gem "annotate"
 end
