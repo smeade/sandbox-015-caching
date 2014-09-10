@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: sandbox-014-bourbon_development
+  database: sandbox-015-caching
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sandbox-014-bourbon_test
+  database: sandbox-015-caching_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: sandbox-014-bourbon_production
-  username: sandbox-014-bourbon
+  database: sandbox-015-caching_production
+  username: sandbox-015-caching
   password: <%= ENV['SANDBOX-014-BOURBON_DATABASE_PASSWORD'] %>
