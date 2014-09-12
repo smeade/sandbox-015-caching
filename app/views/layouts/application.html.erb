@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Sandbox015Caching</title>
+  <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,21 +17,10 @@
   <%= render 'shared/nav' %>
 
   <section>
-    <aside>Bourbon mixins</aside>
+    <aside>Rails Caching</aside>
     <article>
-      <%= link_to 'Bourbon', 'http://bourbon.io/' %> is a simple and lightweight mixin library for Sass.
-    </article>
-  </section>
-  <section>
-    <aside>Neat grid</aside>
-    <article>
-      <%= link_to 'Neat', 'http://neat.bourbon.io/' %> is an open source semantic grid framework built on top of Sass and Bourbon.
-    </article>
-  </section>
-  <section>
-    <aside>Bitters styles</aside>
-    <article>
-      <%= link_to 'Bitters', 'http://bitters.bourbon.io/' %> is scaffold styles, variables and structure for Bourbon projects.
+      Demonstration based on <%= link_to 'How Basecamp Next got to be so damn fast without using much client-side UI', "https://signalvnoise.com/posts/3112-how-basecamp-next-got-to-be-so-damn-fast-without-using-much-client-side-ui" %>
+      <%= link_to '', 'http://bourbon.io/' %>.
     </article>
   </section>
 

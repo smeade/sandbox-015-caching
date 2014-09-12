@@ -10,6 +10,10 @@ Demo Heroku app is [here](http://sandbox-015-caching.herokuapp.com/).
 
         config.action_controller.perform_caching = true
 
+2. To use caching on Heroku:
+
+        heroku addons:add memcachier
+
 ## Getting Started with this codebase
 
 1. Install gems:
