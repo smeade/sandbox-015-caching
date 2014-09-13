@@ -5,12 +5,19 @@ An application to experiment with the [Rails caching](http://guides.rubyonrails.
 Demo Heroku app is [here](http://sandbox-015-caching.herokuapp.com/).
 
 ## Notes
+* Uses key-based cache expiration.
 
-1. To use caching in local dev:
+    Note the use of `touch: true` to ensure that updates to child objects create a new cache key
+
+        class Review < ActiveRecord::Base
+          belongs_to :product, touch: true
+        end
+
+2. To use caching in local dev:
 
         config.action_controller.perform_caching = true
 
-2. To use caching on Heroku:
+3. To use caching on Heroku:
 
         heroku addons:add memcachier
 

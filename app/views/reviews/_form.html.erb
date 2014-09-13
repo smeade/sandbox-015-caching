@@ -1,0 +1,9 @@
+<%= form_for([@product, @product.reviews.new()], :html => { :class => "form-horizontal" }) do |f| %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Give it a catchy title" %>
+  </div>
+  <div class="field">
+    <%= f.text_area :body, placeholder: "Let us know what you thought." %>
+  </div>
+  <%= f.submit %>
+<% end %>

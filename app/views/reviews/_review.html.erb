@@ -1,0 +1,8 @@
+<%= cache review do %>
+  <p class="date">Rendered at: <%= Time.now() %></p>
+  <p>
+    <span><%= review.title %></span><br/>
+    <%= review.body %>
+    <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
+  </p>
+<% end %>

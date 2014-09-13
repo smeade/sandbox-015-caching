@@ -3,7 +3,7 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :sku
       t.string :name
-      t.string :description
+      t.text :description
       t.float :price
       t.boolean :available, default: true
 

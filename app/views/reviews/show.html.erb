@@ -1,0 +1,16 @@
+<div class="page-header">
+  <%= link_to edit_product_review_path(@product, @review), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Review for <%= @product.name %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @review.title %></dd>
+
+  <dt>Body:</dt>
+  <dd><%= @review.body %></dd>
+
+</dl>
